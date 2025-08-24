@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Cybersecurity Training</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">🛡️ PhishGuard</div>
+            <p class="subtitle">Master the Art of Spotting Phishing Attacks</p>
+        </header>
+
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="dashboard">Dashboard</button>
+            <button class="nav-tab" data-tab="simulations">Simulations</button>
+            <button class="nav-tab" data-tab="learn">Learn</button>
+            <button class="nav-tab" data-tab="profile">Profile</button>
+        </nav>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="content-section active">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="completedSims">0</div>
+                    <div class="stat-label">Simulations Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="accuracyRate">0%</div>
+                    <div class="stat-label">Detection Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="currentStreak">0</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="skillLevel">Beginner</div>
+                    <div class="stat-label">Skill Level</div>
+                </div>
+            </div>
+
+            <div class="edu-section">
+                <h2 class="edu-title">Welcome to PhishGuard Training</h2>
+                <p class="edu-text">
+                    Phishing attacks are one of the most common cybersecurity threats today. This interactive training platform 
+                    will help you develop the skills to identify and avoid phishing attempts through realistic simulations 
+                    and comprehensive educational content.
+                </p>
+                <p class="edu-text">
+                    Start with our simulations to test your current knowledge, then dive into the learning section to 
+                    understand the tactics used by cybercriminals and how to protect yourself and your organization.
+                </p>
+            </div>
+        </section>
+
+        <!-- Simulations Section -->
+        <section id="simulations" class="content-section">
+            <h2 class="section-title">Training Simulations</h2>
+            
+            <h3 class="difficulty-header">🟢 Easy Level</h3>
+            <div class="simulation-grid">
+                <div class="simulation-card" data-simulation="email-banking">
+                    <div class="simulation-title">Banking Email Phish</div>
+                    <div class="simulation-difficulty difficulty-easy">Easy</div>
+                    <div class="simulation-description">
+                        A suspicious email claiming to be from your bank requesting account verification. 
+                        Can you spot the red flags?
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="social-lottery">
+                    <div class="simulation-title">Social Media Lottery</div>
+                    <div class="simulation-difficulty difficulty-easy">Easy</div>
+                    <div class="simulation-description">
+                        A social media post claiming you've won a large prize. Too good to be true?
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="email-invoice">
+                    <div class="simulation-title">Fake Invoice Email</div>
+                    <div class="simulation-difficulty difficulty-easy">Easy</div>
+                    <div class="simulation-description">
+                        An unexpected invoice email with suspicious payment instructions. Learn to identify billing scams.
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+            </div>
+
+            <h3 class="difficulty-header">🟡 Medium Level</h3>
+            <div class="simulation-grid">
+                <div class="simulation-card" data-simulation="sms-delivery">
+                    <div class="simulation-title">Package Delivery SMS</div>
+                    <div class="simulation-difficulty difficulty-medium">Medium</div>
+                    <div class="simulation-description">
+                        A text message about a failed package delivery with a suspicious tracking link. 
+                        What should you do?
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="website-login">
+                    <div class="simulation-title">Fake Login Page</div>
+                    <div class="simulation-difficulty difficulty-medium">Medium</div>
+                    <div class="simulation-description">
+                        A convincing replica of a popular website's login page. Can you identify 
+                        the subtle differences that reveal it's fake?
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="support-call">
+                    <div class="simulation-title">Tech Support Scam</div>
+                    <div class="simulation-difficulty difficulty-medium">Medium</div>
+                    <div class="simulation-description">
+                        A popup claiming your computer is infected, with a phone number to call for "support". 
+                        Learn to recognize these common scams.
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+            </div>
+
+            <h3 class="difficulty-header">🔴 Hard Level</h3>
+            <div class="simulation-grid">
+                <div class="simulation-card" data-simulation="email-ceo">
+                    <div class="simulation-title">CEO Impersonation</div>
+                    <div class="simulation-difficulty difficulty-hard">Hard</div>
+                    <div class="simulation-description">
+                        An urgent email from the "CEO" requesting a wire transfer. This advanced attack 
+                        tests your business email compromise detection skills.
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="spear-phishing">
+                    <div class="simulation-title">Spear Phishing Attack</div>
+                    <div class="simulation-difficulty difficulty-hard">Hard</div>
+                    <div class="simulation-description">
+                        A highly targeted email using personal information to appear legitimate. 
+                        Can you spot the sophisticated social engineering?
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+
+                <div class="simulation-card" data-simulation="website-clone">
+                    <div class="simulation-title">Perfect Website Clone</div>
+                    <div class="simulation-difficulty difficulty-hard">Hard</div>
+                    <div class="simulation-description">
+                        An almost perfect replica of a banking website with subtle malicious modifications. 
+                        Advanced detection skills required.
+                    </div>
+                    <button class="start-btn">Start Simulation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Section -->
+        <section id="learn" class="content-section">
+            <div class="education-content">
+                <div class="edu-section">
+                    <h2 class="edu-title">What is Phishing?</h2>
+                    <p class="edu-text">
+                        Phishing is a cybercrime where attackers impersonate legitimate organizations to steal sensitive 
+                        information such as usernames, passwords, credit card details, or other personal data. These 
+                        attacks typically occur through email, text messages, phone calls, or fake websites.
+                    </p>
+                    <p class="edu-text">
+                        Cybercriminals use psychological manipulation techniques to create a sense of urgency, fear, 
+                        or excitement to trick victims into taking immediate action without thinking critically about 
+                        the request.
+                    </p>
+                </div>
+
+                <div class="edu-section">
+                    <h2 class="edu-title">Common Phishing Techniques</h2>
+                    <div class="warning-signs">
+                        <div class="warning-title">Email Phishing Red Flags</div>
+                        <ul class="warning-list">
+                            <li>Urgent or threatening language ("Your account will be closed!")</li>
+                            <li>Generic greetings ("Dear Customer" instead of your name)</li>
+                            <li>Suspicious sender addresses that don't match the claimed organization</li>
+                            <li>Poor grammar, spelling errors, or awkward phrasing</li>
+                            <li>Requests for sensitive information via email</li>
+                            <li>Unexpected attachments or links</li>
+                            <li>Mismatched or suspicious URLs when hovering over links</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="edu-section">
+                    <h2 class="edu-title">Types of Phishing Attacks</h2>
+                    <p class="edu-text"><strong>Spear Phishing:</strong> Targeted attacks aimed at specific individuals or organizations, often using personal information to appear more credible.</p>
+                    <p class="edu-text"><strong>Whaling:</strong> High-value targets like executives or celebrities, often involving business email compromise (BEC) attacks.</p>
+                    <p class="edu-text"><strong>Smishing:</strong> Phishing via SMS/text messages, often involving fake delivery notifications or account alerts.</p>
+                    <p class="edu-text"><strong>Vishing:</strong> Voice phishing through phone calls, where attackers impersonate customer service or technical support.</p>
+                    <p class="edu-text"><strong>Pharming:</strong> Redirecting users from legitimate websites to fake ones through DNS manipulation.</p>
+                </div>
+
+                <div class="edu-section">
+                    <h2 class="edu-title">Protection Strategies</h2>
+                    <ul class="tips-list">
+                        <li>Always verify the sender's identity through independent means before acting on requests</li>
+                        <li>Hover over links to preview URLs before clicking, and type addresses manually when possible</li>
+                        <li>Enable two-factor authentication (2FA) on all important accounts</li>
+                        <li>Keep software, browsers, and security systems updated</li>
+                        <li>Be skeptical of urgent requests, especially those involving money or sensitive information</li>
+                        <li>Use official websites and apps instead of clicking links in emails or messages</li>
+                        <li>Report suspicious emails to your IT department or email provider</li>
+                        <li>Regularly monitor your accounts for unauthorized activity</li>
+                        <li>Educate yourself and others about current phishing trends and techniques</li>
+                    </ul>
+                </div>
+
+                <div class="edu-section">
+                    <h2 class="edu-title">What to Do If You've Been Phished</h2>
+                    <p class="edu-text">If you suspect you've fallen victim to a phishing attack:</p>
+                    <ul class="tips-list">
+                        <li>Change passwords immediately for any compromised accounts</li>
+                        <li>Contact your bank or credit card companies if financial information was involved</li>
+                        <li>Report the incident to relevant authorities and your organization's IT department</li>
+                        <li>Monitor your accounts and credit reports for suspicious activity</li>
+                        <li>Run antivirus scans if you downloaded any malicious files</li>
+                        <li>Document the incident for future reference</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="content-section">
+            <div class="edu-section">
+                <h2 class="edu-title">Your Security Training Profile</h2>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="profileLevel">1</div>
+                        <div class="stat-label">Training Level</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="profileXP">0</div>
+                        <div class="stat-label">Experience Points</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="profileBadges">0</div>
+                        <div class="stat-label">Badges Earned</div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="levelProgress"></div>
+                </div>
+                <p class="edu-text">Complete more simulations to level up and unlock advanced training modules!</p>
+
+                <button class="submit-btn" id="resetProgressBtn">Reset Progress</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Simulation Modal -->
+    <div id="simulationModal" class="simulation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Simulation</h2>
+                <button class="close-btn" id="closeModalBtn" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="simProgress"></div>
+                </div>
+                <div id="simulationContent"></div>
+                <div id="quizSection" class="quiz-container" style="display: none;">
+                    <div class="question">
+                        <div class="question-text" id="questionText"></div>
+                        <div class="options" id="optionsContainer"></div>
+                        <button class="submit-btn" id="submitAnswer" disabled>Submit Answer</button>
+                        <div class="feedback" id="feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
