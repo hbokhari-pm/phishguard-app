@@ -27,7 +27,7 @@ PhishGuard helps users develop critical skills to identify and avoid phishing at
 
 ## Demo
 
-![PhishGuard Dashboard](screenshot.png)
+http://127.0.0.1:3000/index.html
 *Interactive dashboard showing user progress and available simulations*
 
 ##How to Use
